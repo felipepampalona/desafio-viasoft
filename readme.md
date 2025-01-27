@@ -11,3 +11,21 @@ Desenvolver uma aplicação REST com um endpoint que receba dados para envio de 
 
 ## Configuração
 As configurações para envio de e-mail podem ser alteradas na variavel de ambiente: mailPlatform, podendo ser: OCI ou AWS.
+
+## endpoint
+
+```http
+  POST /emails/send
+```
+
+```json
+{
+   "emailDestinario": "luiz@gmail.com",
+   "nomeDestinatario": "Luiz felipe",
+   "remetente": "LuizFelipe@mail.com",
+   "assunto": "novo E-mail",
+   "conteudo": "conteudo do email"
+}
+```
+
+
